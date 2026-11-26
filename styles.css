@@ -1,0 +1,16 @@
+:root { --main: #0b6e69; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, "Noto Sans Bengali", sans-serif; background: #f3f7f7; color: #172b2a; }
+header { background: var(--main); color: #fff; padding: 28px max(16px, calc(50% - 370px)); }
+h1 { margin: 0; }
+input, select { width: 100%; padding: 14px; margin-top: 10px; border: 0; border-radius: 10px; font-size: 16px; }
+main { max-width: 772px; margin: auto; padding: 16px; }
+.notice { background: #fff4d6; border-left: 4px solid #d99100; padding: 12px; border-radius: 6px; }
+.card { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #dbe7e6; border-radius: 12px; padding: 14px; margin-bottom: 10px; cursor: pointer; font: inherit; color: inherit; }
+.card strong { font-size: 18px; color: var(--main); display: block; }
+.card:hover, .card:focus { border-color: var(--main); }
+#more, #close { background: var(--main); color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; cursor: pointer; }
+dialog { width: min(700px, 94vw); max-height: 90vh; border: 0; border-radius: 14px; padding: 18px; }
+dialog::backdrop { background: rgba(0,0,0,.5); }
+h3 { margin: 18px 0 4px; font-size: 15px; color: var(--main); }
+dialog p { margin: 0; white-space: pre-line; }

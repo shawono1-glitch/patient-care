@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6e69">
+  <title>Patient Care — ওষুধের তথ্য</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>✚ Patient Care</h1>
+    <p>ওষুধ, জেনেরিক বা কোম্পানির নাম লিখে খুঁজুন</p>
+    <input id="q" type="search" placeholder="যেমন: Demofen বা Demo Labs" aria-label="খুঁজুন" autocomplete="off">
+    <select id="company" aria-label="কোম্পানি"><option value="">সব কোম্পানি</option></select>
+  </header>
+  <main>
+    <div class="notice">এই তথ্য শুধু জানার জন্য, চিকিৎসকের পরামর্শের বিকল্প নয়। ডাক্তার বা ফার্মাসিস্টের পরামর্শ ছাড়া ওষুধ খাবেন না, বন্ধ বা পরিবর্তন করবেন না।</div>
+    <p id="status" role="status"></p>
+    <div id="list"></div>
+    <button id="more" hidden>আরও দেখুন</button>
+  </main>
+  <dialog id="detail"><button id="close">✕ বন্ধ করুন</button><div id="content"></div></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
